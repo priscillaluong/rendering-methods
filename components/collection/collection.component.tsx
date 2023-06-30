@@ -12,10 +12,10 @@ export type PokemonType = {
 
 export const Collection = ({ pokemonData }: { pokemonData: PokemonType[] }) => {
   return (
-    <>
+    <div className={styles.collectionCtn}>
       {pokemonData.map((pokemon) => {
         return <CollectionCard pokemon={pokemon}></CollectionCard>;
       })}
-    </>
+    </div>
   );
 };

@@ -9,14 +9,11 @@ export default function Moves() {
     fetcherFunc
   );
 
-  const allMoves = data.results;
-  allMoves.map((move: any) => {
-    console.log(move);
-  });
-
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
-  return allMoves.map((move: any) => {
-    return <div>{move.name}</div>;
-  });
+  if (data && !isLoading) {
+    return data.results.map((move: any) => {
+      return <div>{move.name}</div>;
+    });
+  }
 }

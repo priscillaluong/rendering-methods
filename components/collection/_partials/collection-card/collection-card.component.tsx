@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PokemonType } from "../../collection.component";
+import styles from "./collection-card.module.css";
 
 export const CollectionCard = ({
   pokemon: { name, id, image_src },
@@ -9,10 +10,8 @@ export const CollectionCard = ({
   pokemon: PokemonType;
 }) => {
   return (
-    <>
-      <Link href={`/pokemon/${name}`}>
-        <p>{name}</p>
-        <p>{id}</p>
+    <div className={styles.container}>
+      <Link className={styles.card} href={`/pokemon/${name}`}>
         <Image
           src={image_src}
           alt="featuredMedia.alt || ''"
@@ -20,7 +19,9 @@ export const CollectionCard = ({
           height={100}
           style={{ objectFit: "contain" }}
         />
+        <h1>{name}</h1>
+        <p>{id}</p>
       </Link>
-    </>
+    </div>
   );
 };

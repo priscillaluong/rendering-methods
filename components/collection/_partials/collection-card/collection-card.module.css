@@ -1,0 +1,15 @@
+.container {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container:hover {
+  background-color: rgba(250, 250, 250);
+}
+.card {
+  display: flex;
+}
