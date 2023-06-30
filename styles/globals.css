@@ -1,0 +1,115 @@
+:root {
+  --font-family-montserrat: Montserrat, Helvetica, Arial, sans-serif;
+  --font-family-roboto: Roboto, Helvetica, Arial, sans-serif;
+  --font-weight-regular: 400;
+  --black-a: #000000;
+  --black-b: #1b1b1b;
+  --grey-a: #444444;
+  --grey-b: #53565a;
+  --grey-c: #6e6e6e;
+  --white: #ffffff;
+  --light-grey: #f5f5f5;
+  --light-grey-e: #e7e7e7;
+  --light-grey-c: #e8e8e8;
+  --light-grey-d: #e5e5ea;
+  --blue-a: #007db5;
+  --blue-b: #0272a9;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-montserrat);
+}
+
+p {
+  font-family: var(--font-family-roboto);
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Roboto-Regular.woff") format("woff");
+}
+/* roboto-medium - latin */
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Roboto-Medium.woff2") format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Roboto-Medium.woff") format("woff");
+}
+/* roboto-bold - latin */
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Roboto-Bold.woff") format("woff");
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Regular.woff") format("woff");
+}
+/* montserrat-medium - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Medium.woff") format("woff");
+}
+/* montserrat-semi-bold - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Semi-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Semi-Bold.woff")
+      format("woff");
+}
+/* montserrat-bold - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("https://cdn.gymshark.com/fonts/Montserrat-Bold.woff") format("woff");
+}
